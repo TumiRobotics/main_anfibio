@@ -14,3 +14,13 @@ class usuariosAnfibio(models.Model):
 class botesAnfibio(models.Model):
     codigoBote = models.CharField(max_length=512,default='')
     urlBote = models.CharField(max_length=512,default='')
+
+class fotosAnfibio(models.Model):
+    codigoFoto = models.CharField(max_length=128,default='')
+    urlFoto = models.CharField(max_length=512,default='')
+
+class inspecctionInfo(models.Model):
+    fechaInspeccion = models.CharField(max_length=128,default='')
+    distancia = models.CharField(max_length=128,default='')
+    duracion = models.CharField(max_length=128,default='')
+    codigoBote = models.CharField(max_length=128,default='')
